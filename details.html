@@ -1,0 +1,141 @@
+<!-- @VenkyDeexu18 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+        }
+        .btn{
+            width: 100%;
+            height: 40px;
+            background: orange;
+            border: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            margin-top: 12px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: transparent;
+            border: 2px solid orange;
+            color: orange;
+        }
+        .midSec{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 60%;
+            height: 55%;
+            display: grid;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgb(230, 230, 230);
+            grid-template-columns: 0.4fr 0.6fr;
+        }
+        .sec1{
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            flex-direction: column;
+
+        }
+        .sec1 .img{
+            height: 100%;
+            border-radius: 10px;
+            width: auto;
+        }
+        .sec2{
+            padding: 10px 20px;
+        }
+        .sec2 .title{
+            font-weight: bolder;
+            font-size: 19px;
+            color: black;
+        }
+        .st{
+            display: block;
+            font-size: 13px;
+            margin: 5px 0;
+            font-weight: bolder;
+        }
+        .sec2 .sub{
+            font-size: 13px;
+            margin: 20px 0;
+            line-height: 140%;
+        }
+        .tags{
+            width: 100%;
+            height: auto;
+            display: flex;
+            gap: 9px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .tags .tag{
+            width: max-content;
+            height: max-content;
+            padding: 5px 10px;
+            border: orange 1.5px solid;
+            color: orange;
+            font-size: 12px;
+            border-radius: 5px;
+        }
+        @media only screen and (max-width: 1154px) {
+            .wrapper{
+                flex-direction: column;
+                height: max-content;
+                padding-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="midSec">
+            <div class="sec1">
+                <img src="./img/c2.png" alt="" class="img">
+            </div>
+            <div class="sec2">
+                <p class="title">
+                    Tomatolu ammabadunu
+                </p>
+                <p class="sub">
+                    <span class="st">Description</span>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores sequi architecto cupiditate voluptatum? Dolores distinctio ratione atque ad, quia natus 
+                    expedita ea reiciendis dolore accusamus, unde molestias exercitationem quibusdam suscipit.
+                    r sit amet consectetur adipisicing elit. Asperiores sequi architecto cupiditate voluptatum? Dolores distinctio ratione atque ad, quia natus 
+                    expedita ea reiciendis dolore accusamus, unde molestias exercitationem quibusdam suscipit.
+                </p>
+                <span class="st">Uses</span>
+                <div class="tags">
+                    <p class="tag">tomato</p>
+                    <p class="tag">tomato</p>
+                    <p class="tag">tomato</p>
+                    <p class="tag">tomato</p>
+                    <p class="tag">tomato</p>
+                    <p class="tag">tomato</p>
+                </div>
+                <span class="st">Diseases</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

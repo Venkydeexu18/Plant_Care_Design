@@ -1,0 +1,117 @@
+<!-- @VenkyDeexu18 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper
+        {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            font-family: sans-serif;
+        }
+        .wrapper .card{
+            width: calc((100vw / 3) - 150px);
+            height: max-content;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgb(230, 230, 230);
+        }
+        .card .img{
+            border-radius: 5px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .card .title{
+            font-weight: bolder;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+        .card .desc{
+            font-size: 13px;
+            color: rgba(113, 113, 113, 0.895);
+        }
+        .card {
+            transform-style: preserve-3d;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-20px) translateZ(10px);
+        }
+        .btn{
+            width: 100%;
+            height: 45px;
+            background: orange;
+            border: none;
+            color: white;
+            font-family: sans-serif;
+            font-weight: bolder;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: transparent;
+            border: 2px solid orange;
+            color: orange;
+        }
+        @media only screen and (max-width: 1154px) {
+            .wrapper{
+                flex-direction: column;
+                height: max-content;
+                padding-bottom: 30px;
+            }
+            .wrapper .card{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="card">
+            <img src="./img/c1.png" alt="" class="img">
+            <div class="title">Plants</div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro architecto quasi minima. Harum perferendis recusandae 
+            </div>
+            <a href="/index.html">
+                <button class="btn">
+                    view more
+                </button>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/c2.png" alt="" class="img">
+            <div class="title">Plants</div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro architecto quasi minima. Harum perferendis recusandae 
+            </div>
+            <a href="/index.html">
+                <button class="btn">
+                    view more
+                </button>
+            </a>
+        </div>
+        <div class="card">
+            <img src="./img/c3.png" alt="" class="img">
+            <div class="title">Plants</div>
+            <div class="desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro architecto quasi minima. Harum perferendis recusandae 
+            </div>
+            <a href="/index.html">
+                <button class="btn">
+                    view more
+                </button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
